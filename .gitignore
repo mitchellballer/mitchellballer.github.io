@@ -1,0 +1,3 @@
+*.lock
+jekyll/_site/
+jekyll/.jekyll-cache
