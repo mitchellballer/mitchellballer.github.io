@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Technical Resume</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    </head>
+<body>
+    <header>
+        <div class="header-content">
+            <div>
+                <div class="site-title">YOUR NAME</div>
+                <h1>Technical Resume</h1>
+                <div class="contact-info">
+                    <p>email@example.com | github.com/yourusername | linkedin.com/in/yourprofile</p>
+                </div>
+            </div>
+            <div>
+                <!-- Optional: Add a small profile picture or logo here -->
+                <img src="/api/placeholder/100/100" alt="Profile" />
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                Write a brief introduction about yourself here. Keep it technical and to the point, 
+                similar to Low-Tech Magazine's style. Focus on your technical philosophy, approach 
+                to problem-solving, or what makes you unique as a developer/professional.
+            </p>
+            <p>
+                This template follows a minimal, low-tech design philosophy inspired by 
+                sustainable web design principles. It's designed to be lightweight, accessible, 
+                and functional without unnecessary visual embellishments.
+            </p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <h3 class="project-title"><a href="experience/job1.html">Job Title | Company Name</a></h3>
+                    <div class="project-meta">2021 - Present</div>
+                    <p>
+                        Brief description of your responsibilities and achievements in this role.
+                        Focus on technical aspects and quantifiable results.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Leadership</span>
+                        <span class="tag">System Architecture</span>
+                        <span class="tag">API Development</span>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <h3 class="project-title"><a href="experience/job2.html">Previous Job Title | Previous Company</a></h3>
+                    <div class="project-meta">2018 - 2021</div>
+                    <p>
+                        Description of previous role and technical accomplishments.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Frontend</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </li>
+                <!-- Add more experiences as needed -->
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Projects organized by course. Click on a course to view related projects.</p>
+            
+            <div class="course-section">
+                <div class="course-header" onclick="toggleCourse('course1')">
+                    <h3>CS 5610: Web Development <span class="toggle-icon">+</span></h3>
+                </div>
+                <ul id="course1" class="project-list course-content">
+                    <li class="project-item">
+                        <h4 class="project-title"><a href="projects/webdev-project1.html">Social Media Dashboard</a></h4>
+                        <div class="project-meta">Spring 2024 | Course Project</div>
+                        <p>
+                            A responsive social media analytics dashboard built with React and Express, 
+                            featuring real-time data visualization and user authentication.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title"><a href="projects/webdev-project2.html">E-Commerce Platform</a></h4>
+                        <div class="project-meta">Spring 2024 | Final Project</div>
+                        <p>
+                            A full-stack e-commerce platform with product catalog, shopping cart, and checkout functionality.
+                            Implemented with secure payment processing and responsive design.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="course-section">
+                <div class="course-header" onclick="toggleCourse('course2')">
+                    <h3>CS 5800: Algorithms <span class="toggle-icon">+</span></h3>
+                </div>
+                <ul id="course2" class="project-list course-content">
+                    <li class="project-item">
+                        <h4 class="project-title"><a href="projects/algo-project1.html">Graph Visualization Tool</a></h4>
+                        <div class="project-meta">Fall 2023 | Research Project</div>
+                        <p>
+                            Interactive tool for visualizing graph algorithms including Dijkstra's, A*, and 
+                            network flow algorithms with step-by-step animation.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title"><a href="projects/algo-project2.html">Pathfinding Algorithm Comparison</a></h4>
+                        <div class="project-meta">Fall 2023 | Course Project</div>
+                        <p>
+                            Experimental analysis of various pathfinding algorithms, comparing performance
+                            across different graph structures and constraints.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">Performance Analysis</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="course-section">
+                <div class="course-header" onclick="toggleCourse('course3')">
+                    <h3>CS 6140: Machine Learning <span class="toggle-icon">+</span></h3>
+                </div>
+                <ul id="course3" class="project-list course-content">
+                    <li class="project-item">
+                        <h4 class="project-title"><a href="projects/ml-project1.html">Sentiment Analysis Model</a></h4>
+                        <div class="project-meta">Winter 2024 | Course Project</div>
+                        <p>
+                            Developed a sentiment analysis model for customer reviews using NLP techniques 
+                            and deep learning, achieving 92% accuracy on the test dataset.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title"><a href="projects/ml-project2.html">Image Classification System</a></h4>
+                        <div class="project-meta">Winter 2024 | Team Project</div>
+                        <p>
+                            Collaborated on an image classification system for medical diagnostics,
+                            implementing CNN architectures and transfer learning techniques.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="course-section">
+                <div class="course-header" onclick="toggleCourse('personal')">
+                    <h3>Personal Projects <span class="toggle-icon">+</span></h3>
+                </div>
+                <ul id="personal" class="project-list course-content">
+                    <li class="project-item">
+                        <h4 class="project-title"><a href="projects/personal-project1.html">Budget Tracker</a></h4>
+                        <div class="project-meta">2024 | Personal Tool</div>
+                        <p>
+                            A personal finance application for tracking expenses, setting budgets, and visualizing
+                            spending patterns over time with customizable categories and reports.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title"><a href="projects/personal-project2.html">Smart Home Dashboard</a></h4>
+                        <div class="project-meta">2023 | IoT Project</div>
+                        <p>
+                            Centralized dashboard for monitoring and controlling various smart home devices,
+                            with automation rules and energy usage tracking.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MQTT</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        
+
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <p>
+                <strong>Languages:</strong> JavaScript, Python, TypeScript, HTML, CSS, SQL
+            </p>
+            <p>
+                <strong>Frameworks & Libraries:</strong> React, Node.js, Express, Django, TensorFlow
+            </p>
+            <p>
+                <strong>Tools & Platforms:</strong> Git, Docker, AWS, Linux, VS Code
+            </p>
+            <p>
+                <strong>Methodologies:</strong> Agile, Test-Driven Development, CI/CD, Microservices
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Your Name • Built with minimal HTML/CSS</p>
+        <p class="sustainability-note">
+            This site is designed to be lightweight and energy-efficient,
+            inspired by sustainable web design principles.
+        </p>
+    </footer>
+</body>
+</html>

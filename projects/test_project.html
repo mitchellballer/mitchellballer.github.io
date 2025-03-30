@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Your Name</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --main-bg-color: #f9f5e3;
+            --text-color: #333;
+            --accent-color: #4a6fa5;
+            --secondary-accent: #e7bb41;
+            --border-color: #ccc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: normal;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color);
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-accent);
+            border-bottom: 1px solid var(--secondary-accent);
+        }
+
+        ul, ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 2rem;
+        }
+
+        .site-title {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        /* Navigation */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:before {
+            content: "← ";
+        }
+
+        /* Main Content */
+        main {
+            margin-bottom: 3rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .tags {
+            margin: 1rem 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .project-image-container {
+            margin: 2rem 0;
+        }
+
+        /* Images */
+        img {
+            max-width: 100%;
+            height: auto;
+            filter: sepia(20%);
+            border: 1px solid var(--border-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-caption {
+            font-size: 0.8rem;
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Code Snippets */
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        code {
+            font-family: "Courier New", monospace;
+            font-size: 0.9rem;
+        }
+
+        /* Links Section */
+        .links-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .links-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .sustainability-note {
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-title">YOUR NAME</div>
+        <h1>Project Title</h1>
+        <div class="project-meta">
+            Timeline: January - June 2024 | Type: Personal Project
+        </div>
+        <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+        </div>
+    </header>
+
+    <a href="../index.html" class="back-link">Back to Resume</a>
+
+    <main>
+        <section class="section">
+            <h2>Overview</h2>
+            <p>
+                Provide a comprehensive overview of the project. Explain what it is, what problem it solves, 
+                and why you created it. This should give the reader a clear understanding of the project's 
+                purpose and significance.
+            </p>
+            <p>
+                You can also mention any noteworthy aspects such as whether it was a solo or team project, 
+                if it was for a client or personal, and any constraints or requirements that shaped its development.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Technical Details</h2>
+            <p>
+                Describe the technical aspects of the project in detail. Include information about:
+            </p>
+            <ul>
+                <li>The architecture and system design</li>
+                <li>Technologies, frameworks, and libraries used</li>
+                <li>Database structure and data flow</li>
+                <li>APIs or external services integrated</li>
+                <li>Development methodology and tools</li>
+            </ul>
+            <p>
+                This section should highlight your technical expertise and the depth of your implementation.
+            </p>
+        </section>
+
+        <div class="project-image-container">
+            <img src="/api/placeholder/800/400" alt="Project screenshot or diagram" />
+            <div class="image-caption">
+                Caption: System architecture diagram showing the relationship between frontend, 
+                backend, and database components.
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>Key Features</h2>
+            <p>
+                List and describe the main features of the project:
+            </p>
+            <ul>
+                <li>
+                    <strong>Feature 1:</strong> Description of the first key feature and its implementation details.
+                </li>
+                <li>
+                    <strong>Feature 2:</strong> Description of the second key feature and how it works.
+                </li>
+                <li>
+                    <strong>Feature 3:</strong> Description of the third key feature and why it's important.
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Challenges & Solutions</h2>
+            <p>
+                Discuss the major challenges you encountered during the project and how you resolved them. 
+                This section demonstrates your problem-solving abilities and technical creativity.
+            </p>
+            <h3>Challenge 1: Performance Optimization</h3>
+            <p>
+                Describe a specific challenge related to performance that you faced during development.
+                Explain the issue in detail, why it was problematic, and the approaches you considered.
+            </p>
+            <p>
+                Then detail the solution you implemented, why you chose it, and the results achieved.
+                Include specific metrics if possible (e.g., "reduced load time by 45%").
+            </p>
+            
+            <h3>Challenge 2: Data Synchronization</h3>
+            <p>
+                Describe another significant challenge you faced and overcame.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Code Sample</h2>
+            <p>
+                Include a representative code snippet that showcases an interesting or important part of the project.
+            </p>
+            <pre><code>
+// Example code snippet
+function optimizeDataProcessing(data) {
+  // Cache results to avoid redundant calculations
+  const cache = new Map();
+  
+  return data.map(item => {
+    // Check if we've already processed this type of item
+    if (cache.has(item.type)) {
+      return cache.get(item.type);
+    }
+    
+    // Process new item type
+    const result = complexCalculation(item);
+    cache.set(item.type, result);
+    return result;
+  });
+}
+
+function complexCalculation(item) {
+  // Implementation of a complex algorithm
+  // ...
+  return transformedItem;
+}
+            </code></pre>
+            <p>
+                Explain what the code does and why it's important or interesting. Point out any clever
+                optimizations, patterns, or techniques you used.
+            </p>
+        </section>
+
+        <div class="project-image-container">
+            <img src="/api/placeholder/800/500" alt="Project in action" />
+            <div class="image-caption">
+                Caption: The application's main dashboard showing user analytics.
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>Results & Impact</h2>
+            <p>
+                Describe the outcomes and impact of the project. This could include:
+            </p>
+            <ul>
+                <li>User adoption or client satisfaction</li>
+                <li>Performance metrics or improvements</li>
+                <li>Business goals achieved</li>
+                <li>Technical achievements or innovations</li>
+                <li>Feedback received</li>
+            </ul>
+            <p>
+                If applicable, include specific numbers and metrics to quantify the success.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Learnings & Reflections</h2>
+            <p>
+                Reflect on what you learned from the project and how it helped you grow as a developer.
+                Discuss what went well, what you would do differently, and any insights you gained.
+            </p>
+            <p>
+                This section demonstrates your ability to critically evaluate your work and continuously improve.
+            </p>
+        </section>
+
+        <section class="section links-section">
+            <h2>Links & Resources</h2>
+            <ul>
+                <li><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo">github.com/yourusername/project-repo</a></li>
+                <li><strong>Live Demo:</strong> <a href="https://project-demo.example.com">project-demo.example.com</a></li>
+                <li><strong>Documentation:</strong> <a href="https://docs.project.example.com">docs.project.example.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Your Name • Built with minimal HTML/CSS</p>
+        <p class="sustainability-note">
+            This site is designed to be lightweight and energy-efficient,
+            inspired by sustainable web design principles.
+        </p>
+    </footer>
+</body>
+</html>
