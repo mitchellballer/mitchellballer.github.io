@@ -6,6 +6,7 @@
     <title>Mitchell Baller | Technical Resume</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📸</text></svg>">
     </head>
 <body>
     <header>
@@ -22,16 +23,15 @@
             </div> -->
         </div>
     </header>
-
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
         </ul>
     </nav>
-
     <main>
         <section id="about" class="section">
             <h2>About Me</h2>
@@ -47,36 +47,148 @@
             </p>
         </section>
 
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="education-container">
+                <!-- University/College -->
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Georgia Institute of Technology</h3>
+                        <div class="education-meta">August 2021 - December 2023</div>
+                    </div>
+                    <div class="education-content">
+                        <p class="degree">Master of Science in Computer Science</p>
+                        <p class="education-details">
+                            Concentration in Computational Perception and Robotics
+                        </p>
+                        <p>
+                            Advanced Algorithms, Machine Learning, Computer Vision, Web Development
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Robotics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Previous Education -->
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Case Western Reserve University</h3>
+                        <div class="education-meta">August 2013 - May 2017</div>
+                    </div>
+                    <div class="education-content">
+                        <p class="degree">Bachelor of Science in Computer Science</p>
+                        <p class="education-details">
+                            Varsity Track & Field and Cross Country
+                        </p>
+                        <p>
+                            Robotics Lab Research Assistant • Autonomous Navigation Capstone Project
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Computer Engineering</span>
+                            <span class="tag">Mathematics</span>
+                            <span class="tag">Embedded Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="experience" class="section">
             <h2>Experience</h2>
-            <ul class="project-list">
-                <li class="project-item">
-                    <h3 class="project-title">Job Title | Company Name</h3>
-                    <div class="project-meta">2021 - Present</div>
-                    <p>
-                        Brief description of your responsibilities and achievements in this role.
-                        Focus on technical aspects and quantifiable results.
-                    </p>
-                    <div class="tags">
-                        <span class="tag">Leadership</span>
-                        <span class="tag">System Architecture</span>
-                        <span class="tag">API Development</span>
+            
+            <!-- Company with multiple roles -->
+            <div class="company-container">
+                <div class="company-header">
+                    <h3>Circle Optics</h3>
+                    <p class="company-location">Rochester, NY</p>
+                </div>
+                
+                <div class="roles-container">
+                    <!-- Role 1 -->
+                    <div class="role-item">
+                        <h4 class="role-title"><a href="experience/role1.html">Imaging Software Engineer</a></h4>
+                        <div class="project-meta">January 2024 - Present</div>
+                        <p>
+                            Description of your responsibilities and achievements in this more senior role.
+                            Focus on technical accomplishments, leadership, and quantifiable results.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Project Management</span>
+                            <span class="tag">System Architecture</span>
+                            <span class="tag">Team Leadership</span>
+                        </div>
                     </div>
-                </li>
-                <li class="project-item">
-                    <h3 class="project-title">Previous Job Title | Previous Company</h3>
-                    <div class="project-meta">2018 - 2021</div>
-                    <p>
-                        Description of previous role and technical accomplishments.
-                    </p>
-                    <div class="tags">
-                        <span class="tag">Frontend</span>
-                        <span class="tag">UI/UX</span>
-                        <span class="tag">CSS</span>
+                    
+                    <!-- Role 2 -->
+                    <div class="role-item">
+                        <h4 class="role-title"><a href="experience/role2.html">Imaging Science Co-Op</a></h4>
+                        <div class="project-meta">May 2022 - January 2024</div>
+                        <p>
+                            Description of your responsibilities and achievements in this previous role
+                            at the same company. Highlight growth and progression.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Frontend Development</span>
+                            <span class="tag">API Integration</span>
+                            <span class="tag">Agile Methodology</span>
+                        </div>
                     </div>
-                </li>
-                <!-- Add more experiences as needed -->
-            </ul>
+                </div>
+            </div>
+            
+            <!-- Previous company -->
+            <div class="company-container">
+                <div class="company-header">
+                    <h3>Eaton</h3>
+                    <p class="company-location">Cleveland, OH</p>
+                </div>
+                
+                <div class="roles-container">
+                    <!-- Single role at this company -->
+                    <div class="role-item">
+                        <h4 class="role-title">Software Developer</h4>
+                        <div class="project-meta">July 2019 - August 2021</div>
+                        <p>
+                            Description of your work at the previous company, focusing on
+                            technical accomplishments and skills developed.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="role-item">
+                        <h4 class="role-title">IT Functional Analyst</h4>
+                        <div class="project-meta">July 2017 - July 2019</div>
+                        <p>
+                            Description of your work at the previous company, focusing on
+                            technical accomplishments and skills developed.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="role-item">
+                        <h4 class="role-title">IT Intern</h4>
+                        <div class="project-meta">May 2016 - August 2016</div>
+                        <p>
+                            Description of your work at the previous company, focusing on
+                            technical accomplishments and skills developed.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="projects" class="section">
