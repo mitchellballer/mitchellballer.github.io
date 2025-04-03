@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Mitchell Baller</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="site-title">Mitchell Baller</div>
+        <h1>Fourier Transform</h1>
+        <div class="project-meta">
+            Timeline: Fall 2021 | Type: Problem Set
+        </div>
+        <div class="tags">    
+            <span class="tag">Python</span>
+            <span class="tag">Computer Vision</span>
+        </div>
+    </header>
+
+    <a href="../../index.html" class="back-link">Back to Resume</a>
+
+    <main>
+        <section class="section">
+            <h2>Overview</h2>
+            <p>
+                A problem set to explore the Fourier Transform. 
+                Implemented the discrete Fourier Transform 
+                then used it to compress an image by filtering out the least significant frequencies.
+                Finally, used the Forier Transform to create a low-pass filter and demonstrate the difference in 
+                compressed image quality and illustrate the difference in the frequency domain.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Technical Details</h2>
+            <p>
+                My solution was written in Python using openCV and numpy for basic image manipulation and calculations. 
+                No use of built in fft algorithms allowed!
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>
+                    <strong>Image Compression:</strong> Use of Discrete Fourier Transform for image compression at different thresholds.
+                </li>
+                <li>
+                    <strong>Low-pass Filter:</strong> Use of transform to low-pass filter an image at different thresholds
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Challenges & Solutions</h2>
+            <h3>Challenge 1: Frequency Domain Visualization</h3>
+            <p>
+                As you can see from the sample images below, there was a bug in my code to visualize the frequency domain of
+                the compressed and low-pass filtered images.
+                The valid frequencies should be radiating out from the center of the images rather than from the edges of the images. 
+
+            </p>
+            
+            <h3>Challenge 2: Data Synchronization</h3>
+            <p>
+                Describe another significant challenge you faced and overcame.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Code Sample</h2>
+            <p>
+                Include a representative code snippet that showcases an interesting or important part of the project.
+            </p>
+            <pre><code>
+// Example code snippet
+function optimizeDataProcessing(data) {
+  // Cache results to avoid redundant calculations
+  const cache = new Map();
+  
+  return data.map(item => {
+    // Check if we've already processed this type of item
+    if (cache.has(item.type)) {
+      return cache.get(item.type);
+    }
+    
+    // Process new item type
+    const result = complexCalculation(item);
+    cache.set(item.type, result);
+    return result;
+  });
+}
+
+function complexCalculation(item) {
+  // Implementation of a complex algorithm
+  // ...
+  return transformedItem;
+}
+            </code></pre>
+            <p>
+                Explain what the code does and why it's important or interesting. Point out any clever
+                optimizations, patterns, or techniques you used.
+            </p>
+        </section>
+
+        <div class="project-image-container">
+            <img src="/api/placeholder/800/500" alt="Project in action" />
+            <div class="image-caption">
+                Caption: The application's main dashboard showing user analytics.
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>Results & Impact</h2>
+            <p>
+                Describe the outcomes and impact of the project. This could include:
+            </p>
+            <ul>
+                <li>User adoption or client satisfaction</li>
+                <li>Performance metrics or improvements</li>
+                <li>Business goals achieved</li>
+                <li>Technical achievements or innovations</li>
+                <li>Feedback received</li>
+            </ul>
+            <p>
+                If applicable, include specific numbers and metrics to quantify the success.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Learnings & Reflections</h2>
+            <p>
+                Reflect on what you learned from the project and how it helped you grow as a developer.
+                Discuss what went well, what you would do differently, and any insights you gained.
+            </p>
+            <p>
+                This section demonstrates your ability to critically evaluate your work and continuously improve.
+            </p>
+        </section>
+
+        <section class="section links-section">
+            <h2>Links & Resources</h2>
+            <ul>
+                <li><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo">github.com/yourusername/project-repo</a></li>
+                <li><strong>Live Demo:</strong> <a href="https://project-demo.example.com">project-demo.example.com</a></li>
+                <li><strong>Documentation:</strong> <a href="https://docs.project.example.com">docs.project.example.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Mitchell Baller • Built with minimal HTML/CSS</p>
+        <p class="sustainability-note">
+            This site template was developed with Claude AI,
+            inspired by <a href="https://solar.lowtechmagazine.com/">https://solar.lowtechmagazine.com/</a>
+        </p>
+    </footer>
+</body>
+</html>
