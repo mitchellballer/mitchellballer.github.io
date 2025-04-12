@@ -425,41 +425,102 @@
                 </ul>
             </div>
             
-            <!--
             <div class="course-section">
                 <div class="course-header" onclick="toggleCourse('course3')">
-                    <h3>CS 6140: Machine Learning <span class="toggle-icon">+</span></h3>
+                    <h3>CS 7641: Machine Learning <span class="toggle-icon">+</span></h3>
                 </div>
                 <ul id="course3" class="project-list course-content">
                     <li class="project-item">
-                        <h4 class="project-title"><a href="projects/ml-project1.html">Sentiment Analysis Model</a></h4>
-                        <div class="project-meta">Winter 2024 | Course Project</div>
+                        <h4 class="project-title">Supervised Learning</h4>
+                        <div class="project-meta">Spring 2023 | Course Project</div>
                         <p>
-                            Developed a sentiment analysis model for customer reviews using NLP techniques 
-                            and deep learning, achieving 92% accuracy on the test dataset.
+                            Exploration of supervised learning techniques. This assignment was not about implementing algorithms but tuning
+                            their parameters and analyzing what they can tell us about a dataset. 
+                        </p>
+                        <p>
+                            Learning algorithms analyzed: Decision tree (with pruning), Neural Networks, Boosting, Support Vector Machines (SVMs), k-Nearest Neighbors (KNN).
+                        </p>
+                        <p>
+                            Used 2 classification problems to analyze the algorithms: <a href="https://archive.ics.uci.edu/ml/datasets/spambase">Spambase dataset</a>,
+                             which contains a database of email attributes and whether or not they are spam messages.
+                            And a <a href="https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs">Kaggle Spotify dataset</a>
+                            which contains a collection of 1.2 million songs and their attributes like name, popularity, key, loudness, instrumentalness, tempo etc.
+                        </p>
+                        <p>
+                            The goal was to create a binary classification problem for each dataset. 
+                            For the spam dataset, whether or not some email was spam based on it's attributes.
+                            For the Spotify dataset, whether some song would be a hit for this artist (more popular than their average song).
+
                         </p>
                         <div class="tags">
                             <span class="tag">Python</span>
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">NLP</span>
+                            <span class="tag">Pytorch</span>
+                            <span class="tag">Supervised Learning</span>
                         </div>
                     </li>
                     <li class="project-item">
-                        <h4 class="project-title"><a href="projects/ml-project2.html">Image Classification System</a></h4>
-                        <div class="project-meta">Winter 2024 | Team Project</div>
+                        <h4 class="project-title">Randomized Optimization</h4>
+                        <div class="project-meta">Spring 2023 | Course Project</div>
                         <p>
-                            Collaborated on an image classification system for medical diagnostics,
-                            implementing CNN architectures and transfer learning techniques.
+                            Exploration of random search techniques. Again this purpose of this assignment was not to implement the algorithms 
+                            but instead to tune and analyze how they behave.
+                        </p>
+                        <p>
+                            The optimization algorithms I chose were Genetic, Simulated Annealing, Randomized Hill Climb and MIMIC. 
+                            They were applied to the k-colors problem, n-queens problem and the traveling salesman problem.
+                        </p>
+                        <p>
+                            We needed to highlight advantages of different techniques on different optimization problems. 
+                            For example, showing how one problem highlights advantages of genetic algorithms (traveling salesman), another advantages simulated annealing (n-queens)
+                            and another MIMIC (k-colors, sort of). 
+                        </p>
+                        <p>
+                            We also showed how Genetic, Simulated Annealing and Randomized Hill Climb can be used to find good weights for a neural network instead of backpropagation.
+                            We used the same dataset classification problem from the supervised learning project, SPAM filtering and song popularity.
                         </p>
                         <div class="tags">
                             <span class="tag">Python</span>
                             <span class="tag">PyTorch</span>
-                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title">Unsupervised Learning</h4>
+                        <div class="project-meta">Spring 2023 | Course Project</div>
+                        <p>
+                            Exploration of unsupervised learning algorithms: Clustering with k-means and expectation maximization. 
+                            Dimensionality reduction through PCA, ICA and Randomized Projections. 
+                            Finally, how dimensionality reduction can improve training a Neural Network.
+                        </p>
+                        <p>
+                            Using the same SPAM and Spotify datasets as the other assignments. 
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title">Markov Decision Processes</h4>
+                        <div class="project-meta">Spring 2023 | Course Project</div>
+                        <p>
+                            Use <a href="https://gymnasium.farama.org/index.html">OpenAi's gymnasium</a> open source python library to explore 
+                            Markov Decision Processes and how different algorithms approach different classes of MDPs.
+                            I chose to use the <a href="https://gymnasium.farama.org/environments/toy_text/frozen_lake/">Frozen Lake</a> (small, grid world problem) and the 
+                            <a href="https://gymnasium.farama.org/environments/toy_text/taxi/">Taxi</a> (larger grid world problem) to 
+                            compare Value Iteration, Policy Iteration and Q-Learning as learning algorithms.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenAI Gymnasium</span>
+                            <span class="tag">Markov Decision Processes</span>
                         </div>
                     </li>
                 </ul>
             </div>
             
+            <!--
             <div class="course-section">
                 <div class="course-header" onclick="toggleCourse('personal')">
                     <h3>Personal Projects <span class="toggle-icon">+</span></h3>
