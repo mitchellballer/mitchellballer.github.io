@@ -259,7 +259,7 @@
         <section id="projects" class="section">
             <h2>Projects</h2>
             <p>Projects organized by course. Click on a course to view related projects.</p>
-            <p>More coming soon (Last updated Apr 6, 2025)</p>
+            <p>More coming soon (Last updated Apr 26, 2025)</p>
             
             <!-- Computer vision-->
             <div class="course-section">
@@ -519,7 +519,112 @@
                     </li>
                 </ul>
             </div>
-            
+            <div class="course-section">
+                <div class="course-header" onclick="toggleCourse('course4')">
+                    <h3>CS 6601: Artificial Intelligence <span class="toggle-icon">+</span></h3>
+                </div>
+                <ul id="course4" class="project-list course-content">
+                    <li class="project-item">
+                        <h4 class="project-title">Search</h4>
+                        <div class="project-meta">Spring 2022 | Assignment</div>
+                        <p>
+                            Exploration of search techniques. 
+                            Using various search algorithms to find the shortest path between two locations on a simulated map of Romania and Atlanta.
+                        </p>
+                        <p>
+                            Search techniques implemented: Breadth-first search, uniform-cost search, A* search, 
+                            Bidirectional uniform-cost search, Bidirectional A* search and tridirectional uniform-cost search. 
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Search</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title">Skid Isolation</h4>
+                        <div class="project-meta">Spring 2022 | Assignment </div>
+                        <p>
+                            Implement evaluation functions and game playing methods to create a game-playing AI
+                            for the game 'Skid Isolation'. 
+
+                        </p>
+                        <p>
+                            Implemented the minimax algorithm and alpha-beta pruning within a custom player AI agent.
+                            Agent able to evaluate current game state including estimating opponent's best available moves.
+
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI Agents</span>
+                            <span class="tag">Game Playing</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title">Bayesian Networks</h4>
+                        <div class="project-meta">Spring 2022 | Assignment</div>
+                        <p>
+                            Simple assignment to design probabilistic models to evaluate liklihood of event like cancer diagnoses, 
+                            sports teams winning a tournament etc.
+                        </p>
+                        <p>
+                            Implemented the Gibbs sampling algorithm and Metropolis-Hastings sampling algorithms to approximate probability distributions of given examples.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Statistics</span>
+                            <span class="tag">Multi-Chain Monte Carlo methods</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title">Decision Trees and Multiclass-Classification</h4>
+                        <div class="project-meta">Spring 2022 | Assignment</div>
+                        <p>
+                            Write a decision tree and infrastructure for computing confusion matrix, precision, recall and accuracy.
+                        </p>
+                        <p>
+                            Trained the decision tree to classify binary and multi-class datasets then validated using k-folds.
+                            Improved accuracy on complex datasets using random forests.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Classification</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title">Expectation Maximization</h4>
+                        <div class="project-meta">Spring 2022 | Assignment</div>
+                        <p>
+                            Use k-means clustering to segment a colored image and naively compress it. 
+                            Then train a gaussian mixture model with expectation maximization to more effectively compress.
+                            Improve on the GMM using Bayesian Information Criterion.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Expectation Maximization</span>
+                            <span class="tag">Image Processing</span>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <h4 class="project-title">Hidden Markov Models</h4>
+                        <div class="project-meta">Spring 2022 | Assignment</div>
+                        <p>
+                            Implement a Hidden Markov Model (HMMs) to recognize American Sign Language (ASL) words
+                            from an input video.
+                            This is done by analyzing the x-y coordinates of the signer's hands over a sequence of images.
+                        </p>
+                        <p>
+                            HMMs can be used in this case because we encode ASL letters as states and transition probabilities
+                            represent the likelihood that letters can follow one another to create valid words.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Hidden Markov Models</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <!--
             <div class="course-section">
                 <div class="course-header" onclick="toggleCourse('personal')">
